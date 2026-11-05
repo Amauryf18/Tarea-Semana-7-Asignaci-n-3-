@@ -171,9 +171,8 @@ Las siguientes evidencias deben incorporarse al repositorio:
 - Disponibilidad SNMP.
 - Consultas SNMP Walk.
 
-## 11. Running Configurations
-
-
+## Running-Configs
+[Configuraciones de los dispositivos](running-config)
 
 ---
 
