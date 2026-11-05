@@ -1,0 +1,144 @@
+R1:
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+
+hostname R1
+
+no aaa new-model
+no ip icmp rate-limit unreachable
+
+ip dhcp excluded-address 10.23.13.1 10.23.13.99
+
+ip dhcp pool LAN_ZABBIX
+ network 10.23.13.0 255.255.255.0
+ default-router 10.23.13.1
+ dns-server 8.8.8.8
+ domain-name seguridad.local
+
+no ip domain lookup
+ip cef
+no ipv6 cef
+
+ip tcp synwait-time 5
+
+interface Ethernet0/0
+ no ip address
+ shutdown
+ duplex auto
+
+interface GigabitEthernet0/0
+ ip address 10.23.13.1 255.255.255.0
+ media-type gbic
+ speed 1000
+ duplex full
+ negotiation auto
+
+interface GigabitEthernet1/0
+ no ip address
+ shutdown
+ negotiation auto
+
+interface GigabitEthernet2/0
+ no ip address
+ shutdown
+ negotiation auto
+
+interface GigabitEthernet3/0
+ no ip address
+ shutdown
+ negotiation auto
+
+interface GigabitEthernet4/0
+ no ip address
+ shutdown
+ negotiation auto
+
+ip forward-protocol nd
+
+no ip http server
+no ip http secure-server
+
+access-list 10 permit 10.23.13.0 0.0.0.255
+access-list 90 permit 10.23.13.4
+
+snmp-server community ZabbixRO2026 RO 10
+snmp-server community ZBX_MON_RO RO 10
+snmp-server location Laboratorio ITLA - R1
+snmp-server contact Administrador TI
+
+control-plane
+
+line con 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+
+line aux 0
+ exec-timeout 0 0
+ privilege level 15
+ logging synchronous
+ stopbits 1
+
+line vty 0 4
+ login
+
+
+sw:1
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+service compress-config
+
+hostname SW1
+
+no aaa new-model
+
+ip cef
+no ipv6 cef
+
+spanning-tree mode pvst
+spanning-tree extend system-id
+
+interface GigabitEthernet0/0
+ negotiation auto
+
+interface GigabitEthernet0/1
+ negotiation auto
+
+interface GigabitEthernet0/2
+ negotiation auto
+
+interface GigabitEthernet0/3
+ negotiation auto
+
+interface Vlan1
+ ip address 10.23.13.2 255.255.255.0
+
+ip default-gateway 10.23.13.1
+ip forward-protocol nd
+
+ip http server
+ip http secure-server
+
+ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
+
+access-list 10 permit 10.23.13.0 0.0.0.255
+access-list 90 permit 10.23.13.4
+
+snmp-server community ZabbixRO2026 RO 10
+snmp-server community ZBX_MON_RO RO 10
+snmp-server location Laboratorio ITLA - SW1
+snmp-server contact Administrador TI
+
+control-plane
+
+line con 0
+
+line aux 0
+
+line vty 0 4
+ login
