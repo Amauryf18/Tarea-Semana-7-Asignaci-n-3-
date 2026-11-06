@@ -147,24 +147,24 @@ Se verificó la comunicación SNMP mediante consultas SNMP Walk desde Ubuntu Ser
 Las siguientes evidencias deben incorporarse al repositorio:
 
 ### 9.1 Topología de red
-(<img width="544" height="553" alt="image" src="https://github.com/user-attachments/assets/19065be3-d956-48d5-8ccf-d6b3381c5725" />
-)
+<img width="544" height="553" alt="image" src="https://github.com/user-attachments/assets/19065be3-d956-48d5-8ccf-d6b3381c5725" />
+
 
 ### 9.2 Servidor Zabbix
-(<img width="1785" height="927" alt="image" src="https://github.com/user-attachments/assets/61763511-b40e-4042-85a1-dd4a3123ed98" />
-)
+<img width="1785" height="927" alt="image" src="https://github.com/user-attachments/assets/61763511-b40e-4042-85a1-dd4a3123ed98" />
+
 
 ### 9.3 Dispositivos registrados
-(<img width="1649" height="338" alt="image" src="https://github.com/user-attachments/assets/7ad2f25f-8538-4659-be15-e524b4296cb6" />
-)
+<img width="1649" height="338" alt="image" src="https://github.com/user-attachments/assets/7ad2f25f-8538-4659-be15-e524b4296cb6" />
+
 
 ### 9.4 Monitoreo de R1
 <img width="1619" height="890" alt="image" src="https://github.com/user-attachments/assets/1fddb863-18a3-4a98-8e98-1b2141d47b6c" />
 
 
 ### 9.5 Monitoreo de SW1
-(<img width="1622" height="899" alt="image" src="https://github.com/user-attachments/assets/0d147523-9c43-4c16-8225-9c465a3a227b" />
-)
+<img width="1622" height="899" alt="image" src="https://github.com/user-attachments/assets/0d147523-9c43-4c16-8225-9c465a3a227b" />
+
 
 - Conectividad IP.
 - Respuesta ICMP.
