@@ -159,8 +159,10 @@ Las siguientes evidencias deben incorporarse al repositorio:
 )
 
 ### 9.4 Monitoreo de R1
-![Monitoreo de R1](<img width="1619" height="890" alt="image" src="https://github.com/user-attachments/assets/1fddb863-18a3-4a98-8e98-1b2141d47b6c" />
-)
+<img width="1619" height="890" alt="image" src="https://github.com/user-attachments/assets/1fddb863-18a3-4a98-8e98-1b2141d47b6c" />
+
+<img width="1626" height="760" alt="image" src="https://github.com/user-attachments/assets/c25d86b7-63a1-4c1c-9281-76628643eede" />
+
 
 ### 9.5 Monitoreo de SW1
 ![Monitoreo de SW1](<img width="1622" height="899" alt="image" src="https://github.com/user-attachments/assets/0d147523-9c43-4c16-8225-9c465a3a227b" />
