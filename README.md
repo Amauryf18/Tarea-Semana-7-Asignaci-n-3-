@@ -4,7 +4,7 @@
 
 **Demostración completa del laboratorio:**
 
-[VER VIDEO DEMOSTRATIVO](PEGAR_AQUI_EL_ENLACE_DEL_VIDEO)
+[VER VIDEO DEMOSTRATIVO](https://youtu.be/PcDRopy-BdE)
 
 ---
 
